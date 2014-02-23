@@ -27,7 +27,7 @@ function close_window()
 <?php
 	echo date('l jS \of F Y h:i:s A');
 	
-	shell_exec('sudo python /home/pi/buzzmein/ring.py test');
+	shell_exec('sudo python /home/pi/scotty/ring.py ' . $_GET["name"]);
 	
 	echo "<h1>Welcome " . $_GET["name"] . "</h1>";
  

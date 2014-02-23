@@ -11,7 +11,7 @@ t = datetime.today()
 
 door = 7
 
-f = open("/home/pi/buzzmein/scotty.csv","a") 
+f = open("/home/pi/scotty/scotty.csv","a") 
 f.write("start," + str(t) + "," + sys.argv[1] + "\n")
 f.close() 
 
@@ -26,6 +26,6 @@ GPIO.cleanup ()
 
 t = datetime.today()
 
-f = open("/home/pi/buzzmein/scotty.csv","a") 
+f = open("/home/pi/scotty/scotty.csv","a") 
 f.write("end," + str(t) + "," + sys.argv[1] + "\n")
 f.close() 
